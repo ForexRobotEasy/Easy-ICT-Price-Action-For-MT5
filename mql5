@@ -1,0 +1,60 @@
+mql5
+//+------------------------------------------------------------------+
+//|                                                   Easy ICT Price Action For MT5 |
+//|                          Copyright 2021, Forex Robot Easy Team       |
+//|                                            https://www.forexroboteasy.com |
+//+------------------------------------------------------------------+
+
+//+------------------------------------------------------------------+
+//| Custom indicator initialization function                         |
+//+------------------------------------------------------------------+
+int OnInit()
+{
+    // Add initialization code here
+
+    // Display high-timeframe market structure on charts
+    bool displayMarketStructure = true;
+    int marketStructureTimeframe = PERIOD_D1; // Default to daily timeframe
+
+    if (displayMarketStructure)
+    {
+        // Add code to display high-timeframe market structure here
+        // Use marketStructureTimeframe to determine the timeframe for market structure
+    }
+
+    // Display liquidity on charts
+    bool displayLiquidity = true;
+    color buyersLiquidityColor = clrGreen; // Default color for buyers' liquidity
+    color sellersLiquidityColor = clrRed; // Default color for sellers' liquidity
+    bool displayLiquidityLevels = true;
+
+    if (displayLiquidity)
+    {
+        // Add code to display liquidity here
+        // Use buyersLiquidityColor and sellersLiquidityColor to set colors for liquidity levels
+        // Use displayLiquidityLevels to determine whether to display liquidity levels
+    }
+
+    return(INIT_SUCCEEDED);
+}
+
+//+------------------------------------------------------------------+
+//| Custom indicator iteration function                               |
+//+------------------------------------------------------------------+
+int OnCalculate(const int rates_total,
+                const int prev_calculated,
+                const datetime &time[],
+                const double &open[],
+                const double &low[],
+                const double &high[],
+                const double &close[],
+                const long &tick_volume[],
+                const long &volume[],
+                const int &spread[])
+{
+    // Add calculation code here
+
+    // Ensure necessary trading functions are implemented
+
+    return(rates_total);
+}
